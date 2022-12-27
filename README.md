@@ -1,6 +1,16 @@
 # Healthcare Data Analysis
 **DC Health Corp Data Analysis: Smoking Vs. Healthcare Charges**
 
+# Executive Summary
+
+**The health awareness campaign can begin focusing on obese smokers to start.**
+
+- Smoking Status shows a very high correlation with charges, the other variables by themselves show moderate to low correlations.
+- However, for Smokers, BMI shows a very correlation with charges showing the presence of double risk factors for overweight and obese smokers.
+- People who walk over 5K steps per day show reduced charges, and those with over 8K daily steps show significantly reduced charges.
+- Age shows three linear regions increasing with age, with obese smokers in the highest region, and a combination of non-obese smokers and nonsmokers of all BMI types in the middle region.
+- For Smokers, we can create a high predictive model with an R^2 of 0.87 focusing primarily on Age and Obese/Non-obese variables, while for the nonsmokers, additional variables will be required to make an accurate prediction.
+
 *Introduction*
 
 - How can DC Health Corp improve their clients’ high leverage lifestyle variables to decrease overall medical expenses by $5k-$10k on average for high risk clients within 1 year?  
@@ -31,34 +41,22 @@
 
 *Age/Smoker/BMI*
 
--For smokers, we are able to separate out the two linear regions -- the upper one is comprised almost entirely of obese BMI while the lower region is non-obese BMI. 
+- For smokers, we are able to separate out the two linear regions -- the upper one is comprised almost entirely of obese BMI while the lower region is non-obese BMI. 
 
 *Age/Nonsmoker/BMI*
 
--For non-smokers, with our current set of variables we have no means to distinguish the constituents of the two lines -- both contain all types of BMIs. 
+- For non-smokers, with our current set of variables we have no means to distinguish the constituents of the two lines -- both contain all types of BMIs. 
 
 *Regression: Smoker*
 
- -For smokers, we can construct a regression model based on our previous findings by replacing BMI by a categorical variable, obese/non-obese, yielding a high R^2 of 0.87. 
+- For smokers, we can construct a regression model based on our previous findings by replacing BMI by a categorical variable, obese/non-obese, yielding a high R^2 of 0.87. 
  
 *Regression: Nonsmoker*
 
--For nonsmokers, our regression model results in a low R^2 of 0.41.
-
-*Summary*
-
-The health awareness campaign can begin focusing on obese smokers to start.
-
-
-- Smoking Status shows a very high correlation with charges, the other variables by themselves show moderate to low correlations.
-- However, for Smokers, BMI shows a very correlation with charges showing the presence of double risk factors for overweight and obese smokers.
-- People who walk over 5K steps per day show reduced charges, and those with over 8K daily steps show significantly reduced charges.
-- Age shows three linear regions increasing with age, with obese smokers in the highest region, and a combination of non-obese smokers and nonsmokers of all BMI types in the middle region.
-- For Smokers, we can create a high predictive model with an R^2 of 0.87 focusing primarily on Age and Obese/Non-obese variables, while for the nonsmokers, additional variables will be required to make an accurate prediction.
+- For nonsmokers, our regression model results in a low R^2 of 0.41.
 
 
 *Next Steps*
-
 
 The health awareness campaign can begin with the following priorities:
 1) Smokers who are obese and older
