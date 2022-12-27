@@ -25,7 +25,7 @@
 
 *Smoker*
 
-- The median of smokers' charges (~$34k) is significantly higher than the median of nonsmokers' charges (~$7k).
+- The median of smokers' charges ($34k) is significantly higher than the median of nonsmokers' charges ($7k).
 
 *Steps*
 
